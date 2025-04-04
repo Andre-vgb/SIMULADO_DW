@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Semântico</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Contato</h1>
+        <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+        <img src="https://via.placeholder.com/600x200" alt="Imagem ilustrativa do formulário">
+    </header>
+
+    <main>
+        <section>
+            <h2>Envie sua mensagem</h2>
+            <p>Assista ao vídeo abaixo para saber mais sobre como preencher este formulário:</p>
+            
+            <!-- Vídeo incorporado do YouTube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Vídeo tutorial sobre o formulário" frameborder="0" allowfullscreen>
+            </iframe>
+
+            <!-- Formulário -->
+            <form action="#" method="POST">
+
+                <!-- Nome -->
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <!-- E-mail -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Telefone -->
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <!-- Assunto -->
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="suporte">Suporte Técnico</option>
+                </select>
+
+                <!-- Mensagem -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Formulários Semânticos. Todos os direitos reservados.</p>
+        <p>Confira mais informações <a href="https://www.exemplo.com">aqui</a>.</p>
+    </footer>
+
+</body>
+</html>
